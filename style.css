@@ -1,0 +1,350 @@
+.err {
+  text-align:center;
+  
+}
+.err img{
+  width: 200px;
+  
+}
+
+.heroBar {
+  display: grid;
+  justify-content: center;
+  width:720px;
+  text-align: center;
+  margin: auto; 
+  gap:5px;
+  padding:5px;
+  border: 5px solid #b1993a;
+  background-color: #919284;
+  grid-template-columns: 
+  40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+  grid-template-rows: 
+  auto 40px 40px 40px 40px;
+}
+.pStats{ grid-area: 1 / 1 / span 1 / span 15; border: 2px solid black;}
+.pStats h4 {text-align: center;margin: auto; }
+.pPic { grid-area: 3 / 1 / 4 / 2;}
+.pPic img {width: 80px; margin: auto;}
+.pName { grid-area: 2/1/2/2; border: 2px solid black; width: 80px; height: 40px;}
+.pName p { text-align: center; margin: auto; padding-top: 10px;}
+.pTitle { grid-area: 5/1/5/2; border: 2px solid black; width: 80px;height: 40px;}
+.pTitle p { text-align: center; margin: auto; padding-top: 10px;}
+.pLife { grid-area: 2/3/6/3; border: 2px solid black; margin-bottom: 20px; margin-top: 20px;}
+.pLife p {text-align: center;}
+.pAttack { grid-area: 2/4/2/5; border: 2px solid black; width: 100px; height: 20px;}
+.pAttack p {text-align: center; margin: auto;}
+.pDefense { grid-area: 3/5/3/6; border: 2px solid black; width:100px; height: 20px; margin-left: 20px;}
+.pDefense p { text-align: center; margin: auto;}
+.pMagic { grid-area: 4/4/4/5; border: 2px solid black; width: 100px; height: 20px;margin-bottom: 1px;}
+.pMagic p {text-align:center ; margin: auto;}
+.pSpeed { grid-area: 2/7/2/8; border: 2px solid black; width:100px; height: 20px;}
+.pSpeed p {text-align:center; margin: auto;}
+.pCharm { grid-area: 4/7/4/8; border: 2px solid black; width:100px; height: 20px;}
+.pCharm p {text-align:center; margin: auto;}
+.pWeaponPic img {width: 40px; float: left;}
+.pWeapon { grid-area: 5/4/5/6; border: 2px solid black; width:160px; height:40px;}
+.pWeapon p {text-align: center; margin: auto; padding: 10px;}
+.pPack { grid-area: 5/8/5/8; width:40px;}
+.pPack img{width: 40px;}
+.skill1 {grid-area: 2/10/2/10; border: 2px solid black;  width:160px; height:40px; }
+.skill1 img{width:40px; float: left; margin: auto;}
+.skill1 p {text-align:center; margin: auto; padding: 10px;}
+.skill2 {grid-area: 3/10/3/10; border: 2px solid black;  width:160px; height:40px;}
+.skill2 img{width:40px; float: left; margin: auto;}
+.skill2 p {text-align:center; margin: auto; padding: 10px;}
+.skill3 {grid-area: 4/10/4/10; border: 2px solid black;  width:160px; height:40px;}
+.skill3 img{width:40px; float: left; margin: auto;}
+.skill3 p {text-align:center; margin: auto; padding: 10px;}
+.skill4 {grid-area: 5/10/5/10; border: 2px solid black;  width:160px; height:40px;}
+.skill4 img{width:40px; float: left; margin: auto;}
+.skill4 p {text-align:center; margin: auto; padding: 10px;}
+.d20 {grid-area: 3/14/5/15; width:80px; height: 80px; position: relative; top: 6px;}
+.d20 img {width: 80px;margin: auto;}
+.d20 p {text-align:center; margin: auto; position: absolute; bottom: 30px; right: 35px}
+
+
+
+.heroPick { 
+  display: none;
+  margin: auto;
+  height: 100%;
+  width:1000px;
+  text-align: center;
+  gap:10px;
+  padding:10px; 
+  background-color: #444d4e;
+  grid-template-areas: 
+  'choose choose choose choose'
+  'champion maverick soulSeer whisper'
+  'chamPic mavPic ssPic whisPic'
+  'space space space space'
+  'space space space space'
+  'space space space space'
+  
+;}
+.choose { grid-area: choose;}
+.champion { grid-area: champion; border: 2px solid #9c4429; background-color:  #b1993a; margin: auto; width: 80%; border-radius: 8px;}
+.maverick { grid-area: maverick; border: 2px solid #2c403c; background-color:  #606a40; margin: auto; width: 80%; border-radius: 8px;}
+.soulSeer { grid-area: soulSeer; border: 2px solid #407685; background-color:  #919284; margin: auto; width: 80%; border-radius: 8px;}
+.whisper { grid-area: whisper; border: 2px solid #4f4d60; background-color: #2f4063; margin: auto; width: 80%; border-radius: 8px;}
+.chamPic { grid-area: chamPic;}.chamPic img { 
+opacity: 0.5;  
+width:200px;              
+}
+.chamPic img:hover{
+  opacity: 1.0;
+}
+mavPic { grid-area: mavPic; }
+.mavPic img { 
+opacity: 0.5;
+width:200px;              
+}
+.mavPic img:hover{
+  opacity: 1.0;
+  
+}
+.ssPic { grid-area: ssPic; }
+.ssPic img { 
+opacity: 0.5;
+width:200px;              
+}
+.ssPic img:hover{
+  opacity: 1.0;
+  
+}
+whisPic { grid-area: whisPic; }
+.whisPic img { 
+opacity: 0.5;
+width:200px;              
+}
+.whisPic img:hover{
+  opacity: 1.0;
+  
+}
+
+.sideLog { grid-area: sideLog;}
+
+.gridTile {width:20px;}
+/* outer grid */
+/* .topBorder {grid-area: topBorder;}
+.leftBorder {grid-area: leftBorder;} */
+.I { grid-area: I; border: 2px solid black; margin:auto; width:50px;} 
+.C { grid-area: C;border: 2px solid black; margin:auto; width:50px;}
+.O { grid-area: O;border: 2px solid black; margin:auto; width:50px;} 
+.S { grid-area: S;border: 2px solid black; margin:auto; width:50px;}
+.A { grid-area: A;border: 2px solid black; margin:auto; width:50px;} 
+.H { grid-area: H;border: 2px solid black; margin:auto; width:50px;}
+.E { grid-area: E;border: 2px solid black; margin:auto; width:50px;} 
+.D { grid-area: D;border: 2px solid black; margin:auto; width:50px;}
+.R { grid-area: R;border: 2px solid black; margin:auto; width:50px;} 
+.OO { grid-area: OO;border: 2px solid black; margin:auto; width:50px;}
+.N { grid-area: N;border: 2px solid black; margin:auto; width:50px;} 
+.one { grid-area: onei; border: 2px solid black; margin:auto; width:50px;}
+.two { grid-area: twoc; border: 2px solid black; margin:auto; width:50px;} 
+.three { grid-area: threeo; border: 2px solid black; margin:auto; width:50px;}
+.four { grid-area: fours; border: 2px solid black; margin:auto; width:50px;} 
+.five { grid-area: fivea; border: 2px solid black; margin:auto; width:50px;}
+.six { grid-area: sixh; border: 2px solid black; margin:auto; width:50px;} 
+.seven { grid-area: sevene; border: 2px solid black; margin:auto; width:50px;}
+.eight { grid-area: eightd; border: 2px solid black; margin:auto; width:50px;} 
+.nine { grid-area: niner; border: 2px solid black; margin:auto; width:50px;}
+.ten { grid-area: teno; border: 2px solid black; margin:auto; width:50px;} 
+.eleven { grid-area: elevenn; border: 2px solid black; margin:auto; width:50px;}
+
+/* inner grid */
+.innerGrid div{
+  display:grid;
+  border: 2px solid black; margin:auto; width:50px;
+}
+ .Ii { grid-area: Ii; border: 2px solid black; margin:auto; width:50px;} 
+.Ci { grid-area: Ci; border: 2px solid black; margin:auto; width:50px;} 
+.Oi { grid-area: Oi; border: 2px solid black; margin:auto; width:50px;} 
+.Si { grid-area: Si; border: 2px solid black; margin:auto; width:50px;}
+.Ai { grid-area: Ai; border: 2px solid black; margin:auto; width:50px;} 
+.Hi { grid-area: Hi; border: 2px solid black; margin:auto; width:50px;} 
+.Ei { grid-area: Ei; border: 2px solid black; margin:auto; width:50px;} 
+.Di { grid-area: Di; border: 2px solid black; margin:auto; width:50px;}
+.Ri { grid-area: Ri; border: 2px solid black; margin:auto; width:50px;} 
+.OOi { grid-area: OOi; border: 2px solid black; margin:auto; width:50px;} 
+.Ni { grid-area: Ni; border: 2px solid black; margin:auto; width:50px;}
+.Ic { grid-area: Ic; border: 2px solid black; margin:auto; width:50px;}
+.Cc { grid-area: Cc; border: 2px solid black; margin:auto; width:50px;} 
+.Oc { grid-area: Oc; border: 2px solid black; margin:auto; width:50px;} 
+.Sc { grid-area: Sc; border: 2px solid black; margin:auto; width:50px;} 
+.Ac { grid-area: Ac; border: 2px solid black; margin:auto; width:50px;}
+.Hc { grid-area: Hc; border: 2px solid black; margin:auto; width:50px;} 
+.Ec { grid-area: Ec; border: 2px solid black; margin:auto; width:50px;} 
+.Dc { grid-area: Dc; border: 2px solid black; margin:auto; width:50px;} 
+.Rc { grid-area: Rc; border: 2px solid black; margin:auto; width:50px;}
+.OOc { grid-area: OOc; border: 2px solid black; margin:auto; width:50px;} 
+.Nc { grid-area: Nc; border: 2px solid black; margin:auto; width:50px;} 
+.Io { grid-area: Io; border: 2px solid black; margin:auto; width:50px;} 
+.Co { grid-area: Co; border: 2px solid black; margin:auto; width:50px;}
+.Oow { grid-area: Oo; border: 2px solid black; margin:auto; width:50px;} 
+.So { grid-area: So; border: 2px solid black; margin:auto; width:50px;} 
+.Ao { grid-area: Ao; border: 2px solid black; margin:auto; width:50px;} 
+.Ho { grid-area: Ho; border: 2px solid black; margin:auto; width:50px;}
+.Eo { grid-area: Eo; border: 2px solid black; margin:auto; width:50px;} 
+.Do { grid-area: Do; border: 2px solid black; margin:auto; width:50px;} 
+.Ro { grid-area: Ro; border: 2px solid black; margin:auto; width:50px;} 
+.OOo3 { grid-area: OOo3; border: 2px solid black; margin:auto; width:50px;}
+.No { grid-area: No; border: 2px solid black; margin:auto; width:50px;} 
+.Is { grid-area: Is; border: 2px solid black; margin:auto; width:50px;} 
+.Cs { grid-area: Cs; border: 2px solid black; margin:auto; width:50px;} 
+.Os { grid-area: Os; border: 2px solid black; margin:auto; width:50px;}
+.Ss { grid-area: Ss; border: 2px solid black; margin:auto; width:50px;} 
+.As { grid-area: As; border: 2px solid black; margin:auto; width:50px;} 
+.Hs { grid-area: Hs; border: 2px solid black; margin:auto; width:50px;} 
+.Es { grid-area: Es; border: 2px solid black; margin:auto; width:50px;}
+.Ds { grid-area: Ds; border: 2px solid black; margin:auto; width:50px;} 
+.Rs { grid-area: Rs; border: 2px solid black; margin:auto; width:50px;} 
+.OOs { grid-area: OOs; border: 2px solid black; margin:auto; width:50px;} 
+.Ns { grid-area: Ns; border: 2px solid black; margin:auto; width:50px;}
+.Ia { grid-area: Ia; border: 2px solid black; margin:auto; width:50px;} 
+.Ca { grid-area: Ca; border: 2px solid black; margin:auto; width:50px;} 
+.Oa { grid-area: Oa; border: 2px solid black; margin:auto; width:50px;} 
+.Sa { grid-area: Sa; border: 2px solid black; margin:auto; width:50px;}
+.Aa { grid-area: Aa; border: 2px solid black; margin:auto; width:50px;} 
+.Ha { grid-area: Ha; border: 2px solid black; margin:auto; width:50px;} 
+.Ea { grid-area: Ea; border: 2px solid black; margin:auto; width:50px;} 
+.Da { grid-area: Da; border: 2px solid black; margin:auto; width:50px;}
+.Ra { grid-area: Ra; border: 2px solid black; margin:auto; width:50px;} 
+.OOa { grid-area: OOa; border: 2px solid black; margin:auto; width:50px;} 
+.Na { grid-area: Na; border: 2px solid black; margin:auto; width:50px;} 
+.Ih { grid-area: Ih; border: 2px solid black; margin:auto; width:50px;}
+.Ch { grid-area: Ch; border: 2px solid black; margin:auto; width:50px;} 
+.Oh { grid-area: Oh; border: 2px solid black; margin:auto; width:50px;} 
+.Sh { grid-area: Sh; border: 2px solid black; margin:auto; width:50px;} 
+.Ah { grid-area: Ah; border: 2px solid black; margin:auto; width:50px;}
+.Hh { grid-area: Hh; border: 2px solid black; margin:auto; width:50px;} 
+.Eh { grid-area: Eh; border: 2px solid black; margin:auto; width:50px;} 
+.Dh { grid-area: Dh; border: 2px solid black; margin:auto; width:50px;} 
+.Rh { grid-area: Rh; border: 2px solid black; margin:auto; width:50px;}
+.OOh { grid-area: OOh; border: 2px solid black; margin:auto; width:50px;} 
+.Nh { grid-area: Nh; border: 2px solid black; margin:auto; width:50px;} 
+.Ie { grid-area: Ie; border: 2px solid black; margin:auto; width:50px;} 
+.Ce{ grid-area: Ce; border: 2px solid black; margin:auto; width:50px;}
+.Oe { grid-area: Oe; border: 2px solid black; margin:auto; width:50px;} 
+.Se { grid-area: Se; border: 2px solid black; margin:auto; width:50px;} 
+.Ae { grid-area: Ae; border: 2px solid black; margin:auto; width:50px;} 
+.He { grid-area: He; border: 2px solid black; margin:auto; width:50px;}
+.Ee { grid-area: Ee; border: 2px solid black; margin:auto; width:50px;} 
+.De { grid-area: De; border: 2px solid black; margin:auto; width:50px;} 
+.Re { grid-area: Re; border: 2px solid black; margin:auto; width:50px;} 
+.OOe { grid-area: OOe; border: 2px solid black; margin:auto; width:50px;}
+.Ne { grid-area: Ne; border: 2px solid black; margin:auto; width:50px;} 
+.Id { grid-area: Id; border: 2px solid black; margin:auto; width:50px;} 
+.Cd { grid-area: Cd; border: 2px solid black; margin:auto; width:50px;} 
+.Od { grid-area: Od; border: 2px solid black; margin:auto; width:50px;}
+.Sd { grid-area: Sd; border: 2px solid black; margin:auto; width:50px;} 
+.Ad { grid-area: Ad; border: 2px solid black; margin:auto; width:50px;} 
+.Hd { grid-area: Hd; border: 2px solid black; margin:auto; width:50px;} 
+.Ed { grid-area: Ed; border: 2px solid black; margin:auto; width:50px;}
+.Dd { grid-area: Dd; border: 2px solid black; margin:auto; width:50px;} 
+.Rd { grid-area: Rd; border: 2px solid black; margin:auto; width:50px;} 
+.OOd { grid-area: OOd; border: 2px solid black; margin:auto; width:50px;} 
+.Nd { grid-area: Nd; border: 2px solid black; margin:auto; width:50px;}
+.Ir { grid-area: Ir; border: 2px solid black; margin:auto; width:50px;} 
+.Cr { grid-area: Cr; border: 2px solid black; margin:auto; width:50px;} 
+.Or { grid-area: Or; border: 2px solid black; margin:auto; width:50px;} 
+.Sr { grid-area: Sr; border: 2px solid black; margin:auto; width:50px;}
+.Ar { grid-area: Ar; border: 2px solid black; margin:auto; width:50px;} 
+.Hr { grid-area: Hr; border: 2px solid black; margin:auto; width:50px;} 
+.Er { grid-area: Er; border: 2px solid black; margin:auto; width:50px;} 
+.Dr { grid-area: Dr; border: 2px solid black; margin:auto; width:50px;}
+.Rr { grid-area: Rr; border: 2px solid black; margin:auto; width:50px;} 
+.OOr { grid-area: OOr; border: 2px solid black; margin:auto; width:50px;} 
+.Nr { grid-area: Nr; border: 2px solid black; margin:auto; width:50px;} 
+.Ioo { grid-area: Ioo; border: 2px solid black; margin:auto; width:50px;}
+.Coo { grid-area: Coo; border: 2px solid black; margin:auto; width:50px;} 
+.Ooo { grid-area: Ooo; border: 2px solid black; margin:auto; width:50px;} 
+.Soo { grid-area: Soo; border: 2px solid black; margin:auto; width:50px;} 
+.Aoo { grid-area: Aoo; border: 2px solid black; margin:auto; width:50px;}
+.Hoo { grid-area: Hoo; border: 2px solid black; margin:auto; width:50px;} 
+.Eoo { grid-area: Eoo; border: 2px solid black; margin:auto; width:50px;} 
+.Doo { grid-area: Doo; border: 2px solid black; margin:auto; width:50px;} 
+.Roo { grid-area: Roo; border: 2px solid black; margin:auto; width:50px;}
+.OOoo { grid-area: OOoo; border: 2px solid black; margin:auto; width:50px;} 
+.Noo { grid-area: Noo; border: 2px solid black; margin:auto; width:50px;} 
+.In { grid-area: In; border: 2px solid black; margin:auto; width:50px;} 
+.Cn { grid-area: Cn; border: 2px solid black; margin:auto; width:50px;}
+.On { grid-area: On; border: 2px solid black; margin:auto; width:50px;} 
+.Sn { grid-area: Sn; border: 2px solid black; margin:auto; width:50px;} 
+.An { grid-area: An; border: 2px solid black; margin:auto; width:50px;} 
+.Hn { grid-area: Hn; border: 2px solid black; margin:auto; width:50px;}
+.En { grid-area: En; border: 2px solid black; margin:auto; width:50px;} 
+.Dn { grid-area: Dn; border: 2px solid black; margin:auto; width:50px;} 
+.Rn { grid-area: Rn; border: 2px solid black; margin:auto; width:50px;} 
+.OOn { grid-area: OOn; border: 2px solid black; margin:auto; width:50px;}
+.Nn { grid-area: Nn; border: 2px solid black; margin:auto; width:50px;}  
+
+/* #Ii { grid-area: Ii;} #Ci { grid-area: Ci;} #Oi { grid-area: Oi;} #Si { grid-area: Si;}
+#Ai { grid-area: Ai;} #Hi { grid-area: Hi;} #Ei { grid-area: Ei;} #Di { grid-area: Di;}
+#Ri { grid-area: Ri;} #OOi { grid-area: OOi;} #Ni { grid-area: Ni;} #Ic { grid-area: Ic;}
+#Cc { grid-area: Cc;} #Oc { grid-area: Oc;} #Sc { grid-area: Sc;} #Ac { grid-area: Ac;}
+#Hc { grid-area: Hc;} #Ec { grid-area: Ec;} #Dc { grid-area: Dc;} #Rc { grid-area: Rc;}
+#OOc { grid-area: OOc;} #Nc { grid-area: Nc;} #Io { grid-area: Io;} #Co { grid-area: Co;}
+#Oo { grid-area: Oo;} #So { grid-area: So;} #Ao { grid-area: Ao;} #Ho { grid-area: Ho;}
+#Eo { grid-area: Eo;} #Do { grid-area: Do;} #Ro { grid-area: Ro;} #OOo { grid-area: OOo;}
+#No { grid-area: No;} #Is { grid-area: Is;} #Cs { grid-area: Cs;} #Os { grid-area: Os;}
+#Ss { grid-area: Ss;} #As { grid-area: As;} #Hs { grid-area: Hs;} #Es { grid-area: Es;}
+#Ds { grid-area: Ds;} #Rs { grid-area: Rs;} #OOs { grid-area: OOs;} #Ns { grid-area: Ns;}
+#Ia { grid-area: Ia;} #Ca { grid-area: Ca;} #Oa { grid-area: Oa;} #Sa { grid-area: Sa;}
+#Aa { grid-area: Aa;} #Ha { grid-area: Ha;} #Ea { grid-area: Ea;} #Da { grid-area: Da;}
+#Ra { grid-area: Ra;} #OOa { grid-area: OOa;} #Na { grid-area: Na;} #Ih { grid-area: Ih;}
+#Ch { grid-area: Ch;} #Oh { grid-area: Oh;} #Sh { grid-area: Sh;} #Ah { grid-area: Ah;}
+#Hh { grid-area: Hh;} #Eh { grid-area: Eh;} #Dh { grid-area: Dh;} #Rh { grid-area: Rh;}
+#OOh { grid-area: OOh;} #Nh { grid-area: Nh;} #Ie { grid-area: Ie;} #Ce{ grid-area: Ce;}
+#Oe { grid-area: Oe;} #Se { grid-area: Se;} #Ae { grid-area: Ae;} #He { grid-area: He;}
+#Ee { grid-area: Ee;} #De { grid-area: De;} #Re { grid-area: Re;} #OOe { grid-area: OOe;}
+#Ne { grid-area: Ne;} #Id { grid-area: Id;} #Cd { grid-area: Cd;} #Od { grid-area: Od;} */
+
+
+.logoPic {
+  grid-area: logoPic;
+  
+  
+          ;}
+.logoPic img {
+  width:100px;
+  
+}
+
+.gameBoard {
+  grid-area: gameBoard;
+    text-align: center;
+    background-color: #407685;
+    display:none;
+    gap: 10px;
+  padding: 10px;
+  
+/*     grid-template-areas: 
+    'sideLog sideLog logoPic I C O S A H E D R OO N'
+    'sideLog sideLog  Ii Ci Oi Si Ai Hi Ei Di Ri OOi Ni'
+    'sideLog sideLog  Ic Cc Oc Sc Ac Hc Ec Dc Rc OOc Nc'
+    'sideLog sideLog  Io Co Oo So Ao Ho Eo Do Ro OOo No'
+    'sideLog sideLog  Is Cs Os Ss As Hs Es Ds Rs OOs Ns'
+    'sideLog sideLog  Ia Ca Oa Sa Aa Ha Ea Da Ra OOa Na'
+    'pName pTitle  Ih Ch Oh Sh Ah Hh Eh Dh Rh OOh Nh'
+    'pLife pDefense  Ie Ce Oe Se Ae He Ee De Re OOe Ne'
+    'pAttack pMagic Id Cd Od Sd Ad Hd Ed Dd Rd OOd Nd'
+    'pSpeed pCharm  Ir Cr Or Sr Ar Hr Er Dr Rr OOr Nr'
+    'pWeaponPic pWeapon  Ioo Coo Ooo Soo Aoo Hoo Eoo Doo Roo OOoo Noo'
+    'pPack pPack  In Cn On Sn An Hn En Dn Rn OOn Nn'; */
+  grid-template-areas: 
+  'logoPic I C O S A H E D R OO N'
+  'onei Ii Ci Oi Si Ai Hi Ei Di Ri OOi Ni'
+  'twoc Ic Cc Oc Sc Ac Hc Ec Dc Rc OOc Nc'
+  'threeo Io Co Oo So Ao Ho Eo Do Ro OOo3 No'
+  'fours Is Cs Os Ss As Hs Es Ds Rs OOs Ns'
+  'fivea Ia Ca Oa Sa Aa Ha Ea Da Ra OOa Na'
+  'sixh Ih Ch Oh Sh Ah Hh Eh Dh Rh OOh Nh'
+  'sevene Ie Ce Oe Se Ae He Ee De Re OOe Ne'
+  'eightd Id Cd Od Sd Ad Hd Ed Dd Rd OOd Nd'
+  'niner Ir Cr Or Sr Ar Hr Er Dr Rr OOr Nr'
+  'teno Ioo Coo Ooo Soo Aoo Hoo Eoo Doo Roo OOoo Noo'
+  'elevenn In Cn On Sn An Hn En Dn Rn OOn Nn'
+  ;
+}
+
