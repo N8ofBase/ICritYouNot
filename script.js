@@ -13,6 +13,13 @@ rollD20(stat) {
 }  
   
 }
+
+function d20Roll() {
+  let roll = Math.floor(Math.random() * 20) + 1;
+  pD20.innerHTML = roll;
+  return pD20;
+}
+
 // heroBar variables
 let player = new Player("Saynt", "Champion", 30, 30, 10, 2, 3, 0, 0, 6, [], "Overpower", "Shield Slam", "Radiant Strike", "Heal");
 
